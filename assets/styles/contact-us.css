@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -57,8 +57,9 @@ header {
 #text {
   position: absolute;
   font-size: 5em;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family:'Lobster', sans-serif ;
 }
 
 .parallax img {
@@ -74,12 +75,15 @@ header {
   position: relative;
   background-color: #003329;
   padding: 100px;
+  height: 40rem;
 }
 
-.sec h2 {
-  font-size: 3em;
-  color: #fff;
-  margin-bottom: 20px;
+.sec h3 {
+  font-size: 4em;
+  color: #f0f0f0;
+  margin-bottom: 20px; 
+  font-family: 'Cormorant', serif;
+ 
 }
 
 .sec p {
@@ -87,3 +91,4 @@ header {
   color: #ccc;
   font-weight: 300;
 }
+
