@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Let's book a travel !</title>
     <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="assets/styles/general.css">
     <link rel="stylesheet" href="assets/styles/contact-us.css" />
   </head>
   <body>
@@ -30,23 +31,25 @@
     </section>
 
     <section class="sec">
-      <h3>where to go?</h3>
+      <div class="form-content">
+        <h3>where to go?</h3>
       <p>you can contact with us for more informations of our tour trips!</p>
+      </div>
       <div class="contact-form">
         <form id="contactForm" >
           <div class="input-wrapper">
-           <input type="text" class="input">
-           <input type="text" class="input">
+           <input type="text" class="input" id="firstName">
+           <input type="text" class="input" id="lastName">
           </div>
            <div class="input-wrapper">
-             <input type="text" class="input">
-           <input type="text" class="input">
+             <input type="number" class="input" id="phone">
+           <input type="email" class="input" id="email">
            </div>
-           <div class="input-wrapper">
-             <textarea type="text" class="input comment"></textarea>
+           <div class="input-wrapper" >
+             <textarea type="text" class="input comment" id="description"></textarea>
            </div>
+           <input class="submit-btn" type="submit" value="Submit">
          </form>
-         <button class="submit-btn">Submit</button>
       </div>
     </section>
     <script src="script/contactUs.js"></script>

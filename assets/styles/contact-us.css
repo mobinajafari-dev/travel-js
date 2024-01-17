@@ -1,11 +1,4 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 body {
   background-color: #f9f9f9;
   min-height: 100vh;
@@ -80,7 +73,14 @@ header {
  
 }
 
-.sec h3 {
+.form-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-content h3 {
   font-size: 4em;
   color: #f0f0f0;
   margin-bottom: 2rem; 
@@ -88,11 +88,10 @@ header {
  
 }
 
-.sec p {
+.form-content p {
   font-size: 1em;
   color: #ccc;
   font-weight: 300;
-  margin-bottom: 3rem;
 }
 
 .contact-form{
@@ -107,7 +106,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
 }
 
 

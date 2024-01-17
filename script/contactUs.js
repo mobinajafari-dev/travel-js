@@ -15,3 +15,18 @@ window.addEventListener("scroll", () => {
    hill4.style.left = value * -1.5 + "px";
   }
 });
+
+
+document.querySelector('#contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+
+  let contactInfo = {
+    firstName : document.querySelector('#firstName').value,
+    lastName : document.querySelector('#lastName').value,
+    phone : document.querySelector('#phone').value,
+    email : document.querySelector('#email').value,
+    description : document.querySelector('#description').value,
+  }
+
+  console.log('info' , contactInfo);
+})
