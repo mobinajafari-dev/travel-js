@@ -71,17 +71,19 @@ header {
 }
 
 .sec {
+  width: 100vw;
   margin-top: 18vh;
   position: relative;
   background-color: #003329;
   padding: 100px;
   height: 40rem;
+ 
 }
 
 .sec h3 {
   font-size: 4em;
   color: #f0f0f0;
-  margin-bottom: 20px; 
+  margin-bottom: 2rem; 
   font-family: 'Cormorant', serif;
  
 }
@@ -90,5 +92,53 @@ header {
   font-size: 1em;
   color: #ccc;
   font-weight: 300;
+  margin-bottom: 3rem;
 }
 
+.contact-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.input{
+  width:35vw;
+  border-radius: 1rem;
+  padding:0.5rem;
+  background-color: #f0f0f0;
+  margin: 0.5rem;
+}
+
+.comment{
+  width: 70vw;
+  height: 8rem;
+}
+
+.submit-btn{
+  text-decoration: none;
+  color: #359381;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin: 2rem auto;
+  text-align: center;
+  width: 10rem;
+}
+
+.submit-btn:hover{
+  background-color: #359381;
+  color: #f9f9f9;
+}
