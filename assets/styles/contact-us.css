@@ -1,3 +1,12 @@
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: rgb(214, 222, 224);
+}
 
 body {
   background-color: #f9f9f9;
@@ -68,32 +77,29 @@ header {
 
 /* mapty */
 
-:root {
-  --color-brand--1: #ffb545;
-  --color-brand--2: #00c46a;
-  --color-dark--1: #2d3439;
-  --color-dark--2: #42484d;
-  --color-light--1: #aaa;
-  --color-light--2: #ececec;
-  --color-light--3: rgb(214, 222, 224);
+
+
+.mapty{
+  background-color: #003329;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin-top: 18vh;
 }
 
-
-
 .mapty-wrapper {
-  margin-top: 18vh;
-  position: relative;
+  background-color: #003329;
   display: flex;
-  width: 100vw;
-  box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
   color: var(--color-light--2);
   font-weight: 400;
   line-height: 1.6;
-  background-color: #fff;
-
+  overscroll-behavior-y: none;
+  width: 90vw;
   height: 100vh;
-  background-color: #003329;
+  margin-left:  auto;
+  margin-right:  auto;
+
 }
 
 /* GENERAL */
@@ -103,32 +109,35 @@ header {
 }
 
 /* SIDEBAR */
-.mapty .sidebar {
-  flex-basis: 50rem;
+.mapty-sidebar {
   background-color: var(--color-dark--1);
   padding: 3rem 5rem 4rem 5rem;
   display: flex;
   flex-direction: column;
+  flex-basis: 20rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+
 }
 
-.mapty .logo {
+.mapty-logo {
   height: 5.2rem;
   align-self: center;
   margin-bottom: 4rem;
 }
 
-.mapty .workouts {
+.mapty-workouts {
   list-style: none;
   height: 77vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.mapty .workouts::-webkit-scrollbar {
+.mapty-workouts::-webkit-scrollbar {
   width: 0;
 }
 
-.mapty .workout {
+.mapty-workout {
   background-color: var(--color-dark--2);
   border-radius: 5px;
   padding: 1.5rem 2.25rem;
@@ -233,9 +242,9 @@ header {
   display: none;
 }
 
-.mapty .copyright {
+.mapty-copyright {
   margin-top: auto;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: center;
   color: var(--color-light--1);
 }
@@ -253,6 +262,8 @@ header {
 
 /* MAP */
 #map {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   flex: 1;
   height: 100%;
   background-color: var(--color-light--1);
@@ -288,7 +299,7 @@ header {
 .sec {
   width: 100vw;
   background-color: #003329;
-  padding: 100px;
+  padding: 80px 100px;
  
 }
 
