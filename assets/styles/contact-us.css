@@ -111,10 +111,10 @@ header {
 /* SIDEBAR */
 .mapty-sidebar {
   background-color: var(--color-dark--1);
-  padding: 3rem 5rem 4rem 5rem;
+  padding: 3rem 4rem 4rem 3rem;
   display: flex;
   flex-direction: column;
-  flex-basis: 20rem;
+  flex-basis: 15rem;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 
@@ -143,14 +143,15 @@ header {
   padding: 1.5rem 2.25rem;
   margin-bottom: 1.75rem;
   cursor: pointer;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.75rem 1.5rem;
 }
+
 .mapty .workout--running {
   border-left: 5px solid var(--color-brand--2);
 }
+
 .mapty .workout--cycling {
   border-left: 5px solid var(--color-brand--1);
 }
@@ -244,7 +245,7 @@ header {
 
 .mapty-copyright {
   margin-top: auto;
-  font-size: 1rem;
+  font-size: 0.5rem;
   text-align: center;
   color: var(--color-light--1);
 }
